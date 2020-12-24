@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1BFF2BE-E2EC-404D-A605-811BF3DB16FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatternCore</RootNamespace>
+    <AssemblyName>DesignPatternCore</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapter\A.cs" />
+    <Compile Include="Adapter\B.cs" />
+    <Compile Include="Adapter\PowerAdapter.cs" />
+    <Compile Include="Bridge\mySqlProvider.cs" />
+    <Compile Include="Bridge\ORMBasic.cs" />
+    <Compile Include="Bridge\ORMControl.cs" />
+    <Compile Include="Bridge\sqlServerProvider.cs" />
+    <Compile Include="Builder\BuyBuilder.cs" />
+    <Compile Include="Builder\BuyDirector.cs" />
+    <Compile Include="Builder\BuyList.cs" />
+    <Compile Include="Builder\CommonBuilder.cs" />
+    <Compile Include="Builder\VIPBuilder.cs" />
+    <Compile Include="Composite\Circle.cs" />
+    <Compile Include="Composite\ComplexGraphics.cs" />
+    <Compile Include="Composite\Graphics.cs" />
+    <Compile Include="Composite\Line.cs" />
+    <Compile Include="Decorator\Serve.cs" />
+    <Compile Include="Facade\palyerGame.cs" />
+    <Compile Include="Factory\abstractFactory\BasicFactory.cs" />
+    <Compile Include="Factory\abstractFactory\mySqlFactory.cs" />
+    <Compile Include="Factory\abstractFactory\sqlServerFactory.cs" />
+    <Compile Include="Factory\factoryMethod\Creator.cs" />
+    <Compile Include="Factory\factoryMethod\mysqlFactory.cs" />
+    <Compile Include="Factory\factoryMethod\sqlServerFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Factory\MysqlORMProvider.cs" />
+    <Compile Include="Factory\ORMBasic.cs" />
+    <Compile Include="Factory\simple\ORMProviderSimpleFactory.cs" />
+    <Compile Include="Factory\SqlServerORMProvider.cs" />
+    <Compile Include="Proxy\Action.cs" />
+    <Compile Include="Singleton\MultiThreedSingleton.cs" />
+    <Compile Include="Singleton\SingleThreedSingleton.cs" />
+    <Compile Include="TemplateMethod\TemplateMethod.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
