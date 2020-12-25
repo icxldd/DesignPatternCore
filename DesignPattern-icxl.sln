@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternCore", "Design
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern-TestConsole", "DesignPattern-TestConsole\DesignPattern-TestConsole.csproj", "{4C9235A3-2DB8-4CE9-857E-427FB36A6DBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructureCore", "DataStructureCore\DataStructureCore.csproj", "{EA65FB70-B90F-4687-ABCA-6DB2E11DC59E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure-TestConsole", "DataStructure-TestConsole\DataStructure-TestConsole.csproj", "{E792213B-C291-4950-A365-B68AFD0B0692}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{4C9235A3-2DB8-4CE9-857E-427FB36A6DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C9235A3-2DB8-4CE9-857E-427FB36A6DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C9235A3-2DB8-4CE9-857E-427FB36A6DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA65FB70-B90F-4687-ABCA-6DB2E11DC59E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA65FB70-B90F-4687-ABCA-6DB2E11DC59E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA65FB70-B90F-4687-ABCA-6DB2E11DC59E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA65FB70-B90F-4687-ABCA-6DB2E11DC59E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E792213B-C291-4950-A365-B68AFD0B0692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E792213B-C291-4950-A365-B68AFD0B0692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E792213B-C291-4950-A365-B68AFD0B0692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E792213B-C291-4950-A365-B68AFD0B0692}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
